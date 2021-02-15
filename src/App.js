@@ -64,8 +64,8 @@ function App() {
     })
   }
 
-  useEffect(() => {
-    fetchAllNotes();
+  useEffect(async () => {
+    await fetchAllNotes();
   }, []);
 
   const onSearchTyped = (event) => {
